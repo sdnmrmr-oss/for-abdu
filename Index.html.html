@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#FFF2B2">
+<title>For Abdu ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --butter:#FFF2B2;
+  --blue:#A8C6E7;
+  --sun:#FFE08A;
+  --cloud:#FFF7D6;
+  --breeze:#7FA8D6;
+  --espresso:#3E2723;
+  --peony:#F4C9D6;
+  --pink:#E9AFC0;
+  --cream:#FFF9E9;
+  --paper:#FFF5D8;
+  --ink:#5B4542;
+  --shadow:rgba(62,39,35,.15);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);font-family:'DM Sans',sans-serif;
+  background:
+    radial-gradient(circle at 15% 12%,rgba(255,255,255,.8),transparent 20%),
+    linear-gradient(145deg,#FFF7C9 0%,#A8C6E7 48%,#FFF0B1 100%);
+  overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+button{font:inherit}
+.app{min-height:100vh;padding:18px 12px 45px;position:relative}
+.page{max-width:760px;margin:auto}
+.music{
+  position:fixed;top:14px;left:13px;z-index:50;
+  border:1px solid rgba(62,39,35,.16);
+  background:rgba(255,247,214,.82);backdrop-filter:blur(12px);
+  color:var(--espresso);border-radius:999px;padding:9px 13px;
+  font-size:12px;box-shadow:0 5px 18px var(--shadow);
+}
+.hero{
+  min-height:94vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;position:relative;overflow:hidden;
+}
+.hero-inner{padding:75px 10px 35px;position:relative;z-index:3}
+.kicker{font-family:'Patrick Hand';font-size:21px;transform:rotate(-2deg)}
+.hero h1{
+  font-family:'Cormorant Garamond',serif;font-weight:600;
+  font-size:clamp(76px,19vw,130px);line-height:.76;
+  letter-spacing:-3px;color:#76525a;margin:23px 0 30px;
+}
+.hero h1 small{display:block;font-size:.34em;letter-spacing:1px;margin-bottom:13px}
+.heart{
+  width:78px;height:78px;border:0;border-radius:50%;
+  background:var(--peony);color:#70454f;font-size:37px;
+  box-shadow:0 10px 30px rgba(126,77,88,.22);
+  animation:float 3s ease-in-out infinite;
+}
+.press{font-family:'Patrick Hand';font-size:19px;margin-top:9px}
+.cloud{
+  position:absolute;border-radius:999px;background:rgba(255,255,255,.62);
+  box-shadow:28px 10px 0 rgba(255,255,255,.38),-25px 13px 0 rgba(255,255,255,.4);
+}
+.c1{width:145px;height:48px;left:-30px;top:22%}
+.c2{width:175px;height:58px;right:-55px;top:13%}
+.c3{width:120px;height:42px;right:12%;bottom:15%}
+.flower{position:absolute;font-size:29px;animation:sway 4s ease-in-out infinite}
+.f1{left:5%;bottom:18%}.f2{right:8%;bottom:27%}.f3{left:17%;top:18%}.f4{right:18%;top:31%}
+.chick{
+  position:absolute;font-size:68px;filter:drop-shadow(0 7px 5px rgba(62,39,35,.13));
+  animation:float 4s ease-in-out infinite;
+}
+.chick.a{left:7%;bottom:17%;transform:rotate(-7deg)}
+.chick.b{right:7%;bottom:23%;font-size:62px;animation-delay:.8s}
+.chick.c{right:14%;top:20%;font-size:47px;animation-delay:1.3s}
+.section{
+  margin:28px auto;border-radius:30px;overflow:hidden;
+  box-shadow:0 15px 45px rgba(62,39,35,.13);
+  border:1px solid rgba(62,39,35,.08);position:relative;
+}
+.inner{padding:38px 24px;position:relative}
+.script{font-family:'Patrick Hand';font-size:21px}
+.cake-section{
+  min-height:430px;background:linear-gradient(135deg,#A8C6E7,#FFF7D6);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+}
+.cake-title{font-family:'Cormorant Garamond';font-size:50px;line-height:.9;color:#604c53;margin:8px 0}
+.wish{font-size:14px;opacity:.8;margin:12px 0 17px}
+.cake{position:relative;width:195px;height:160px;margin:20px auto}
+.plate{
+  position:absolute;left:4px;bottom:7px;width:187px;height:22px;border-radius:50%;
+  background:#fff4dd;border:3px solid #dfb6a8
+}
+.layer{
+  position:absolute;left:28px;width:138px;border-radius:14px;
+  background:linear-gradient(#f6d5c7,#e9aaa7);border:3px solid #cf8f91
+}
+.layer.bottom{bottom:27px;height:58px}.layer.top{bottom:77px;height:43px}
+.icing{
+  position:absolute;left:25px;bottom:100px;width:144px;height:27px;
+  border-radius:50%;background:#fff3e7;border:3px solid #e3b8b2
+}
+.drip{position:absolute;width:13px;height:25px;background:#fff3e7;border-radius:0 0 9px 9px;bottom:89px}
+.dr1{left:53px}.dr2{left:92px;height:32px}.dr3{left:129px;height:21px}
+.candle{
+  position:absolute;left:89px;bottom:111px;width:17px;height:49px;
+  background:repeating-linear-gradient(45deg,#f4c9d6 0 7px,#fff7d6 7px 14px);
+  border-radius:5px;border:2px solid #d79aaa
+}
+.flame{
+  position:absolute;left:2px;top:-27px;width:12px;height:22px;
+  background:#ffd35c;border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+  box-shadow:0 0 18px #ffd35c
+}
+.candle.off .flame{display:none}
+.tap,.arrow{
+  border:0;background:var(--peony);color:var(--espresso);
+  border-radius:999px;padding:11px 19px;box-shadow:0 5px 16px var(--shadow)
+}
+.letter{background:rgba(255,249,233,.95)}
+.tape{
+  position:absolute;width:95px;height:29px;right:24px;top:15px;
+  background:rgba(233,175,192,.7);transform:rotate(5deg)
+}
+.letter h2,.list h2,.big h2,.ending h2{
+  font-family:'Cormorant Garamond';font-size:49px;line-height:.95;
+  color:#704d55;margin:0 0 22px
+}
+.letter p,.big p{
+  font-family:'Patrick Hand';font-size:23px;line-height:1.38;margin:0
+}
+.note{
+  margin:28px auto 0;max-width:300px;background:var(--peony);
+  padding:20px;border-radius:8px;transform:rotate(-2deg);
+  box-shadow:0 9px 22px var(--shadow);font-family:'Patrick Hand';
+  font-size:21px;text-align:center
+}
+.play{background:var(--espresso);color:#fff7e8;text-align:center}
+.play h2{font-family:'Cormorant Garamond';font-size:55px;line-height:1;margin:15px 0}
+.play p{font-family:'Patrick Hand';font-size:23px;color:#f4c9d6}
+.list{background:var(--peony)}
+.list .inner{padding-bottom:48px}
+.item{
+  display:flex;gap:12px;align-items:flex-start;
+  font-family:'Patrick Hand';font-size:23px;line-height:1.18;margin:14px 0
+}
+.dot{color:#7b4e58;font-size:18px}
+.big{background:linear-gradient(135deg,#FFF7D6,#E8F0FA)}
+.big p{font-size:22px}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.reason{
+  background:rgba(255,255,255,.58);padding:17px 14px;border-radius:18px;
+  font-family:'Patrick Hand';font-size:19px
+}
+.reason b{display:block;font-family:'DM Sans';font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.signature{
+  text-align:right;font-family:'Cormorant Garamond';font-size:28px;
+  margin-top:28px;color:#7c5660
+}
+.ending{
+  min-height:610px;background:linear-gradient(150deg,#FFF2B2,#F4C9D6 52%,#A8C6E7);
+  text-align:center;display:flex;align-items:center
+}
+.ending h2{font-size:64px;margin-bottom:15px}
+.ending p{font-family:'Patrick Hand';font-size:25px;line-height:1.35}
+.final-heart{font-size:46px;animation:pulse 1.8s infinite}
+.footer{text-align:center;font-family:'Patrick Hand';font-size:18px;margin:26px 0}
+.petal{position:fixed;z-index:10;pointer-events:none;font-size:18px;opacity:.75;animation:fall linear infinite}
+.p1{left:8%;top:-20px;animation-duration:11s}.p2{left:31%;top:-30px;animation-duration:14s;animation-delay:2s}
+.p3{left:63%;top:-15px;animation-duration:12s;animation-delay:4s}.p4{left:88%;top:-25px;animation-duration:15s;animation-delay:1s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes pulse{50%{transform:scale(1.13)}}
+@keyframes fall{0%{transform:translate3d(0,-10vh,0) rotate(0)}100%{transform:translate3d(80px,110vh,0) rotate(360deg)}}
+@media(max-width:520px){
+  .app{padding-left:10px;padding-right:10px}
+  .section{border-radius:24px}.inner{padding:31px 19px}
+  .hero{min-height:87vh}.hero h1{font-size:80px}
+  .chick{font-size:56px}.chick.a{left:2%}.chick.b{right:1%}
+  .reasons{grid-template-columns:1fr}
+  .letter h2,.list h2{font-size:42px}.ending h2{font-size:53px}
+}
+</style>
+</head>
+
+<body>
+<div class="app">
+<button class="music" id="musicBtn">♫ dreamy jazz · off</button>
+<div class="petal p1">✿</div><div class="petal p2">♡</div><div class="petal p3">✦</div><div class="petal p4">❀</div>
+
+<main class="page">
+
+<section class="hero">
+  <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+  <span class="flower f1">✿</span><span class="flower f2">❀</span><span class="flower f3">✦</span><span class="flower f4">♡</span>
+  <div class="chick a">🐥</div><div class="chick b">🐥</div><div class="chick c">🐤</div>
+  <div class="hero-inner">
+    <div class="kicker">a tiny birthday surprise, just for you ♡</div>
+    <h1><small>for my favourite neighbour</small>Abdu</h1>
+    <button class="heart" id="startBtn">♡</button>
+    <div class="press">press me</div>
+  </div>
+</section>
+
+<section class="section cake-section" id="cakeSection">
+  <div class="inner">
+    <div class="script">okay birthday boy...</div>
+    <div class="cake-title">make a wish ♡</div>
+    <div class="wish">you better make it a good one 😋</div>
+    <div class="cake">
+      <div class="plate"></div><div class="layer bottom"></div><div class="layer top"></div>
+      <div class="icing"></div><div class="drip dr1"></div><div class="drip dr2"></div><div class="drip dr3"></div>
+      <div class="candle" id="candle"><div class="flame"></div></div>
+    </div>
+    <button class="tap" id="blowBtn">or tap the flame ♡</button>
+  </div>
+</section>
+
+<section class="section letter">
+  <div class="tape"></div>
+  <div class="inner">
+    <div class="script">a little note for you...</div>
+    <h2>Happy 20, Abdu ♡</h2>
+    <p>
+      I’m honestly so happy that you’re my friend.
+      And the funniest part is that you’re literally my neighbour —
+      so I guess the universe really didn’t have to make things
+      complicated to put you in my life. :)
+      <br><br>
+      I’m really grateful for every conversation, every laugh,
+      every random little moment, and every time you’ve made
+      an ordinary day feel a little nicer.
+      <br><br>
+      Having you as my friend genuinely makes me happy.
+      You’re someone I care about a lot, and I hope you always
+      know that you have a special place in my heart.
+      <br><br>
+      I love you so much, Abdu ♡
+      and I truly wish you nothing but the absolute best.
+    </p>
+    <div class="note">
+      from being neighbours to becoming friends...
+      <br>
+      honestly, I got lucky. ♡
+    </div>
+  </div>
+</section>
+
+<section class="section play">
+  <div class="inner">
+    <div style="font-size:70px">🐥</div>
+    <h2>20 looks great on you.</h2>
+    <p>
+      You already look great but uk,<br>
+      the more the better 😋
+    </p>
+    <button class="arrow" id="next1">okay, there’s more →</button>
+  </div>
+</section>
+
+<section class="section list" id="things">
+  <div class="inner">
+    <div class="script">little things I appreciate about you ♡</div>
+    <h2>Things I love about you</h2>
+    <div class="item"><span class="dot">♡</span><span>Your kindness.</span></div>
+    <div class="item"><span class="dot">♡</span><span>Your way of thinking and talking.</span></div>
+    <div class="item"><span class="dot">♡</span><span>How easy you make conversations feel.</span></div>
+    <div class="item"><span class="dot">♡</span><span>Your funny little moments.</span></div>
+    <div class="item"><span class="dot">♡</span><span>The fact that my neighbour somehow became someone I care about this much.</span></div>
+    <div class="item"><span class="dot">♡</span><span>Your presence — even when you’re doing absolutely nothing special.</span></div>
+    <div class="item"><span class="dot">♡</span><span>And simply... you being you.</span></div>
+    <div style="text-align:center;margin-top:25px">
+      <button class="arrow" id="next2">one more thing →</button>
+    </div>
+  </div>
+</section>
+
+<section class="section big">
+  <div class="inner">
+    <div class="script">okay, serious part for a second ♡</div>
+    <h2>I’m really glad I know you.</h2>
+    <p>
+      Sometimes we don’t realize how lucky we are to have certain
+      people close to us until we stop and think about it.
+      <br><br>
+      I’m glad you’re one of those people for me.
+      I’m glad I can call you my friend.
+      I’m glad that my neighbour is someone I can laugh with,
+      talk to, and make little memories with.
+      <br><br>
+      I hope this new year of your life gives you reasons to smile
+      more than you expected. I hope you get closer to your dreams,
+      meet good people, experience beautiful things, and become
+      even more proud of yourself.
+      <br><br>
+      And whenever you need someone cheering for you from nearby...
+      well, you know where your neighbour is. :)
+    </p>
+
+    <div class="reasons">
+      <div class="reason"><b>your heart</b>may it always find people who appreciate it.</div>
+      <div class="reason"><b>your dreams</b>may you get everything you work for.</div>
+      <div class="reason"><b>your days</b>may they be full of little reasons to smile.</div>
+      <div class="reason"><b>your future</b>may it be even better than you imagine.</div>
+    </div>
+
+    <div class="signature">
+      wishing you all the good in the world ♡<br>
+      — Meriem
+    </div>
+  </div>
+</section>
+
+<section class="section ending">
+  <div class="inner" style="width:100%">
+    <div style="font-size:38px">✿ ♡ ❀</div>
+    <h2>Happy Birthday,<br>Abdu ♡</h2>
+    <p>
+      Here’s to 20.<br>
+      Here’s to more laughs.<br>
+      More good memories.<br>
+      More dreams coming true.<br>
+      And a lot, a lot of happiness.
+    </p>
+    <div class="final-heart">♡</div>
+    <div class="script">
+      I’m so happy you’re my friend.<br>
+      I love you so much, and I wish you all the best.
+    </div>
+    <div style="margin-top:30px;font-family:'Patrick Hand';font-size:18px">
+      — end of your little birthday surprise —
+    </div>
+  </div>
+</section>
+
+<div class="footer">made with love, flowers & tiny chicks for my favourite neighbour ♡</div>
+</main>
+</div>
+
+<script>
+let audioCtx=null,master=null,musicOn=false,timer=null,chord=0;
+const musicBtn=document.getElementById('musicBtn');
+
+function updateMusic(){
+  musicBtn.textContent='♫ dreamy jazz · '+(musicOn?'on':'off');
+}
+function startMusic(){
+  if(audioCtx){
+    musicOn=true;
+    master.gain.setTargetAtTime(.035,audioCtx.currentTime,.2);
+    updateMusic();
+    return;
+  }
+  audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  master=audioCtx.createGain();
+  master.gain.value=.035;
+  master.connect(audioCtx.destination);
+
+  const chords=[
+    [261.63,329.63,392.00,493.88],
+    [220.00,277.18,329.63,415.30],
+    [174.61,220.00,261.63,329.63],
+    [196.00,246.94,293.66,369.99]
+  ];
+
+  function play(){
+    if(!musicOn)return;
+    const now=audioCtx.currentTime;
+    chords[chord].forEach((freq,i)=>{
+      const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+      osc.type=i===0?'sine':'triangle';
+      osc.frequency.value=freq;
+      gain.gain.setValueAtTime(0,now);
+      gain.gain.linearRampToValueAtTime(.11/(i+1),now+.45);
+      gain.gain.exponentialRampToValueAtTime(.001,now+3.4);
+      osc.connect(gain);gain.connect(master);
+      osc.start(now);osc.stop(now+3.6);
+    });
+    chord=(chord+1)%chords.length;
+  }
+
+  musicOn=true;play();timer=setInterval(play,3500);updateMusic();
+}
+
+musicBtn.addEventListener('click',()=>{
+  if(!audioCtx)startMusic();
+  else{
+    musicOn=!musicOn;
+    master.gain.setTargetAtTime(musicOn?.035:0,audioCtx.currentTime,.2);
+    updateMusic();
+  }
+});
+
+document.getElementById('startBtn').addEventListener('click',()=>{
+  startMusic();
+  document.getElementById('cakeSection').scrollIntoView({behavior:'smooth'});
+});
+
+let blown=false;
+function blow(){
+  if(blown)return;
+  blown=true;
+  document.getElementById('candle').classList.add('off');
+  document.getElementById('blowBtn').textContent='wish made ♡';
+  setTimeout(()=>{
+    document.querySelector('.letter').scrollIntoView({behavior:'smooth'});
+  },850);
+}
+document.getElementById('blowBtn').addEventListener('click',blow);
+
+document.getElementById('next1').addEventListener('click',()=>{
+  document.getElementById('things').scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('next2').addEventListener('click',()=>{
+  document.querySelector('.big').scrollIntoView({behavior:'smooth'});
+});
+</script>
+</body>
+</html>
